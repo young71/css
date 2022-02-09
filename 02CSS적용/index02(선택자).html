@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{} /*전역선택(디자인 시작전에 반드시적용할 기초문법) */
+        b {color : red;}
+        ul, li {list-style: none;} /*ul, li를 동시에 선택*/
+        #a1 {color :  green;}
+        .b1 {color : pink;}
+
+        .abox p {color : red;} /* 공백자도 선택자(하위선택 ) */
+        .abox > p {color : yellow;} /* > 선택자(직계자식선택) */
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="abox">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        <ul>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+        </ul>
+    </div>
+
+    <p id="a1">아이디선택자</p> <!-- 아이디는 고유 하나만 쓸수있다-->
+
+    <p class="b1">클랙스선택자</p> <!-- 클래스는 여러번써도 상관없음-->
+    <p class="b1">클랙스선택자</p> 
+
+    
+
+
+
+    <b>태그선택자</b>
+
+    <ul> 
+        <li>대중선택자</li>
+        <li>대중선택자</li>
+    </ul>
+    
+</body>
+</html>
