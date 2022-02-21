@@ -1,0 +1,14 @@
+.form-join {
+    /*가로, 아래, 흐릿정도, 색상 */
+    box-shadow: 0px 8px 16px rgb(0,0,0, 0.3);
+    /* col클래스가 float을 가지고 있기 때문에
+      float을 없앤다
+    */
+    margin: 0 auto;
+    float: none;
+    padding: 30px 20px;
+}
+.form-join form {
+    /* 가로, 아래, 흐릿정도, 색상 */
+    box-shadow: 0px 8px 16px rgb(0,0,0, 0.3);
+}

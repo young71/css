@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 적용방법 (min or 일반 파일중 하나를 링크)-->
+    <!--링크순서 중요-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 개인디자인(부트스트랩 아래에 위치) -->
+    <link rel="stylesheet" href="css/common.css"> <!-- 공통 -->
+    <link rel="stylesheet" href="css/style.css"> <!-- 헤더, 푸터 -->
+    <link rel="stylesheet" href="css/join.css"> <!-- 지금할 CSS -->
+
+
+</head>
+<body>
+
+    <header class="custom-header">
+        <nav class="navbar navbar-inverse">
+            <!-- 2. 헤더의 좌우 너비 container로 변경-->
+             <div class="container">
+                 <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                     </button>
+ 
+                     <!--1. 로고 영역-->
+                     <a class="navbar-brand" href="#">
+                         <img src="img/logo.svg" width="30">
+                     </a>
+ 
+                 </div>
+                 <div class="collapse navbar-collapse" id="myNavbar">
+ 
+                     <!-- 좌측 메뉴-->
+                  <ul class="nav navbar-nav">
+                     <li class="active"><a href="#">메인</a></li>
+                     <li><a href="#">글</a></li>
+                     <li><a href="#">Q&A</a></li>
+                     <!-- 4.드롭다운메뉴-->
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">목록
+                         <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                           <li><a href="#">Page 1-1</a></li>
+                           <li><a href="#">Page 1-2</a></li>
+                           <li><a href="#">Page 1-3</a></li>
+                         </ul>
+                       </li>
+                 
+                  </ul>
+ 
+                     <!-- 우측 로그인 버튼-->
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>
+ 
+ 
+                     <!-- 3. 검색창(클레스 이름을 navbar-right로 변경) -->
+                  <form class="navbar-form navbar-right" action="#">
+                     <div class="input-group">
+                       <input type="text" class="form-control" placeholder="내용을 검색하세요" name="search">
+                       <div class="input-group-btn">
+                         <button class="btn btn-default" type="submit">
+                           검색  
+                         </button>
+                       </div>
+                     </div>
+                   </form>
+ 
+ 
+ 
+                 </div>
+             </div>
+         </nav>
+     </header>
+
+     <section>
+         <div class="container">
+             <div class="row">
+                 <div class="col-xs-12 col-md-9 col-lg-6 form-join">
+                    
+                    <form>
+                        <!-- 버튼달린 인풋-->
+                        <div class="form-group">
+                            <label>아이디</label>
+                            <div class="input-group">
+                            <input type="text" class="form-control" placeholder="아이디는 8~12글자 입니다.">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                     <i class="glyphicon glyphicon-search">중복확인가능</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <!--버튼없는 유형-->
+                        <div class="form-group">
+                            <label>비밀번호</label>
+                            <input type="password" class="form-control" placeholder="비밀번호(영/대소문자 슷자조합 8~16자 이상) ">
+                        </div>
+
+                        <div class="form-group">
+                            <label>비밀번호</label>
+                            <input type="password" class="form-control" placeholder="비밀번호를 확인해주세요 ">
+                        </div>
+
+                        <div class="form-group">
+                            <label>이름</label>
+                            <input type="text" class="form-control" placeholder="홍길동">
+                        </div>
+                       
+                        <div class="form-group">
+                            <label>휴대폰번호</label>
+                            <div class="input-group">
+                            <input type="text" class="form-control" placeholder="000-0000-0000">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                     <i class="glyphicon glyphicon-search">인증하기</i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>우편번호</label>
+                            <div class="input-group">
+                            <input type="text" class="form-control" placeholder="주소를확인해주세요">
+                            <div class="input-group-btn">
+                                <button type="text" class="form-control" type="button">
+                                     <i class="glyphicon glyphicon-search">주소찾기</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>기본</label>
+                        <input type="text" class="form-control" placeholder="홍길동">
+                    </div>
+                    <div class="form-group">
+                        <label>상세</label>
+                        <input type="text" class="form-control" placeholder="홍길동">
+                    </div>
+
+                    <!--버튼영역-->
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary">가입하기</button>
+                        <button type="button" class="btn btn-primary btn-block">가입하기</button>
+                        <button type="button" class="btn btn-info btn-block">로그인</button>
+                    
+                    </div>
+
+
+                    </form>
+
+            
+                 </div>
+             </div>
+         </div>
+     </section>
+
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 com-sm-12">
+                    <div class="copyright">
+                        <a href="#"> 
+                            <img src="img/logo.svg" width="30">
+                        </a>
+                        Bootstrap | 대표자 : 홍길동 | E-MAIL : info@info.com<br>
+                        사업자번호 : 123-56-78910 | 개인정보보호책임자 : 홍길동 | 통신판매업 : 2019-서울강남-0001<br>
+                        주소 : 서울시 강남구
+                        <address> 😍Bootstrap. ALL RIGHT RESERVED</address>
+                    </div>
+                </div>
+                <div class="col-cd-5 com-sm-12">
+                    <div class="footer-menu">
+                        <ul class="copyright-menu">
+                            <li><a href="#">고객지원</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보취급방취</a></li>
+                            <li><a href="#">문의사항</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
